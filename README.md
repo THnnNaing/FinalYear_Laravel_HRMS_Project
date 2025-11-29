@@ -42,8 +42,8 @@ Installing and running this project is super easy! Please follow the steps below
     Open your terminal and clone the project from GitHub:
 
     ```bash
-    git clone [https://github.com/your-username/your-project.git](https://github.com/your-username/your-project.git)
-    cd your-project
+    git clone [https://github.com/THnnNaing/FinalYear_Laravel_HRMS_Project.git]
+    cd FinalYear_Laravel_HRMS_Project
     ```
 
 2.  **Install PHP Dependencies**
@@ -65,25 +65,31 @@ Installing and running this project is super easy! Please follow the steps below
 
 4.  **Install Frontend Dependencies**
 
-    This will install the dependencies into your `node_modules` folder:
-
     ```bash
-    yarn
-    # or npm install
+    npm install
+    npm run dev
+    # or npm install && npm run dev
     ```
 
-5.  **Compile Assets**
-
-    Run this command to compile JavaScript and Styles into production-ready files:
+5.  **Install Laravel UI Assets**
 
     ```bash
-    yarn dev
-    # or npm run dev
+    composer require laravel/ui --dev
+    php artisan breeze:install
+    php artisan ui bootstrap
     ```
 
-6.  **Serve the Application**
+6.  **Database Migration**
 
-    You can now start the local development server:
+   Set up your database tables (in .env):
+
+    ```bash
+    php artisan migrate:refresh --seed 
+    ```
+    
+7.  **Serve Program**
+
+   Server ON url: http://127.0.0.1:8000/
 
     ```bash
     php artisan serve

@@ -31,7 +31,7 @@ Installing and running this project is super easy! Please follow the steps below
 
 * **PHP** (version 8.0+)
 * **Composer**
-* **Node.js** and **Yarn** (or npm)
+* **Node.js** (or npm)
 
 ---
 
@@ -79,18 +79,18 @@ Installing and running this project is super easy! Please follow the steps below
     php artisan ui bootstrap
     ```
 
-6.  **Database Migration**
+6.  **Database Migration***
 
-   Set up your database tables (in .env):
-
+    Set up your database tables (in .env):
+    
     ```bash
     php artisan migrate:refresh --seed 
     ```
+
+7.  **Serve Program***
+
+    Server ON url: http://127.0.0.1:8000/
     
-7.  **Serve Program**
-
-   Server ON url: http://127.0.0.1:8000/
-
     ```bash
     php artisan serve
     ```
